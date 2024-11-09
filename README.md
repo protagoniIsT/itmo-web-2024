@@ -1,1 +1,1 @@
-# ITMO WEB programming course
+# ITMO CT WEB programming course

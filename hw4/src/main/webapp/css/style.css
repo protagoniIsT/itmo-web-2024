@@ -1,0 +1,244 @@
+:root {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: rgb(34, 34, 34);
+
+    --border-color: rgb(185, 185, 185);
+    --border: 1px solid var(--border-color);
+    --border-radius: 6px;
+    --caption-color: #3B5998;
+    --available-move-color: #5c5ef1;
+    --input-grey-color: #d4d4d4;
+    --table-background-color: #f8f8f8;
+    --article-info-color: #888888;
+    --common-grey-color: #b9b9b9;
+    --profile-h2-color: #551a8b;
+}
+
+html {
+    min-width: 800px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header {
+    position: relative;
+}
+
+header .languages {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header .enter-or-register-box {
+    position: absolute;
+    top: calc(24px + 0.5rem);
+    right: 0;
+}
+
+header nav {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    margin: 0.5rem 0 2rem 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin-right: 1rem;
+}
+
+header nav ul li.active a {
+    border-bottom: 3px solid var(--caption-color);
+}
+
+.middle {
+    display: flow-root;
+}
+
+aside {
+    float: right;
+    width: 20rem;
+}
+
+aside section {
+    border: var(--border);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+aside section .header {
+    border-bottom: var(--border);
+    padding: 0.25rem;
+    font-weight: bold;
+    color: var(--caption-color);
+}
+
+aside section .header:before {
+    content: "→ ";
+    font-size: 1.1rem;
+}
+
+aside section .body {
+    padding: 0.25rem;
+}
+
+aside section .footer {
+    border-top: var(--border);
+    padding: 0.25rem;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+aside section .footer a:after {
+    content: " →";
+}
+
+main {
+    margin-right: 21rem;
+}
+
+footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: var(--border);
+    text-align: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: flex-start;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+}
+
+.user-details {
+    flex-grow: 1;
+}
+
+.user-profile h2 {
+    margin: 0;
+    color: var(--profile-h2-color);
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.user-profile .info {
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+.user-profile .info ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
+}
+
+.user-profile .avatar {
+    margin-left: 1rem;
+    align-self: center;
+}
+
+.user-profile .avatar img {
+    max-width: 100px;
+    border-radius: var(--border-radius);
+}
+
+.arrows {
+    margin-top: 0;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.arrows a {
+    color: var(--available-move-color);
+    text-decoration: none;
+}
+
+.arrows a:hover {
+    color: darkblue;
+}
+
+.arrows .inactive {
+    color: gray;
+    pointer-events: none;
+    cursor: default;
+}
+
+.arrows .inactive-link {
+    color: gray;
+    font-size: 2rem;
+    cursor: default;
+}
+
+.error-code {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+article {
+    margin-bottom: 1rem;
+}
+
+article .title {
+    color: var(--caption-color);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+article .information {
+    color: var(--article-info-color);
+    font-size: 0.9rem;
+}
+
+article .body {
+    border-left: 0.375rem solid var(--common-grey-color);
+    padding-left: 0.625rem;
+    display: block;
+}
+
+.datatable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.datatable table th {
+    border: 0.0625rem solid var(--input-grey-color);
+    padding: 0.5rem;
+    text-align: center;
+    background-color: white;
+}
+
+.datatable table td {
+    border: 0.0625rem solid var(--input-grey-color);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.datatable table tr:nth-child(odd) {
+    background-color: var(--table-background-color);
+}
+
+
+
+
+

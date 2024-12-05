@@ -1,0 +1,21 @@
+main comment {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
+
+main comment .header {
+    font-weight: bold;
+    color: var(--caption-color);
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+main comment .body {
+    font-size: 1rem;
+}
+
+main comment .footer {
+    color: #888;
+    font-size: 0.85rem
+}

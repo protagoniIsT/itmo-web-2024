@@ -1,0 +1,7 @@
+.sidePosts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
